@@ -1,2 +1,2 @@
-# thuppa-leetcode-problems
-leetcode submissions for thuppa
+# leetcode-problems
+leetcode submissions 
