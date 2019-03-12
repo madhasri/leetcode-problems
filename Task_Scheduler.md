@@ -1,3 +1,23 @@
+### Problem Description
+
+Given a char array representing tasks CPU need to do. It contains capital letters A to Z where different letters represent different tasks. Tasks could be done without original order. Each task could be done in one interval. For each interval, CPU could finish one task or just be idle.
+
+However, there is a non-negative cooling interval n that means between two same tasks, there must be at least n intervals that CPU are doing different tasks or just be idle.
+
+You need to return the least number of intervals the CPU will take to finish all the given tasks.
+
+### Easy to Understand Solution
+
+Suppose the task list was like "A" , "A" , "A" , "A" , "B" , "B" , "C" , "D" with n = 4
+Basically we need to identify the minimum idle time slots. Going with the greedy approach, to ensure that there are n spaces between any repeated tasks, identify if there are (n+1) unique tasks that can be done. If there are good, otherwise fill the rest with idle slots.
+
+A B C D idle A B idle idle idle A idle idle idle idle A
+
+ans = 16
+
+
+### code 
+```
 class Solution {
     
     class Task
@@ -69,3 +89,10 @@ class Solution {
         
     }
 }
+```
+
+### Run Time Complexity
+O(n) where n is the total number of time intervals
+
+### Space Time Complexity
+for priority queue and temp list worst case : O(26)
