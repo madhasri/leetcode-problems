@@ -8,7 +8,7 @@ Inorder Traversal has visiting order like : left child , parent and then right c
 Recusrsive solution is easy as it uses the function call stack.
 Iterative solution requires an explicit stack data structure. Idea is to keep pushing to the stack and going left, and when no more left child present then start popping and printing. While doing this popping and printing, if there is a right child of the current node then push that to the stack.
 
-### recursive code
+### code
 
 void inOrder(TreeNode root)
 {
