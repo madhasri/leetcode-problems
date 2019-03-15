@@ -9,7 +9,7 @@ Recusrsive solution is easy as it uses the function call stack.
 Iterative solution requires an explicit stack data structure. Idea is to keep pushing to the stack and going left, and when no more left child present then start popping and printing. While doing this popping and printing, if there is a right child of the current node then push that to the stack.
 
 ### code
-
+```
 void inOrder(TreeNode root)
 {
 if(root == null) return;
@@ -19,7 +19,7 @@ System.out.println(root.val);
 inOrder(root.right);
 
 }
-
+```
 
 
 ### code 
