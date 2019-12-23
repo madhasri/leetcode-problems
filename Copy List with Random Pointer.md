@@ -11,6 +11,8 @@ random_index: the index of the node (range from 0 to n-1) where random pointer p
 
 ### Easy to understand Solution
 
+Imagine the linked list as a graph, where each node has two edges coming out from it, next and random. We need to do a depth-first traversal of the graph and keep track of visited nodes. As we visit the nodes, we create copies. To keep track of visited nodes, we maintain a map of old nodes to new nodes. 
+
 ### Code
 
 ```
@@ -35,5 +37,9 @@ class Solution {
 
 ### Time Complexity
 
+O(N)
+
 ### Space Complexity
+
+O(N)
 
